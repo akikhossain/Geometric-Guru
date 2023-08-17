@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,6 +13,98 @@
   </head>
   <body>
     <header></header>
-    <main></main>
+    <main>
+      <section>
+        <!-- container -->
+
+        <!-- card container -->
+        <div class="flex flex-col lg:flex-row gap-6">
+          <!-- cards -->
+          <div class="flex-1">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+              <div class="card w-96 bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="./images/triangle.png" alt="" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Triangle</h2>
+                  <p class="mb-5">Area (A) = 0.5 x b x h</p>
+                  <p class="mb-14">
+                    <input
+                      type="text"
+                      class="border bg-gray-100 w-20 px-2"
+                      placeholder="b"
+                      id="triangle-base"
+                    />
+                    <span class="ml-2 mr-4">cm</span>
+                    <input
+                      type="text"
+                      class="border bg-gray-100 w-20 px-2"
+                      placeholder="h"
+                      id="triangle-height"
+                    />
+                    <span class="ml-2">cm</span>
+                  </p>
+                  <p>Area : <span id="triangle-area"></span></p>
+                  <div class="card-actions">
+                    <button
+                      onclick="calculateTriangleArea()"
+                      class="btn btn-primary"
+                    >
+                      Calculate
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card w-96 bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="./images/rectangle.png" alt="" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Rectangle</h2>
+                  <p class="mb-5">Area (A) = w x I</p>
+                  <p class="mb-14">
+                    <input
+                      type="text"
+                      class="border bg-gray-100 w-20 px-2"
+                      placeholder="w"
+                    />
+                    <span class="ml-2 mr-4">cm</span>
+                    <input
+                      type="text"
+                      class="border bg-gray-100 w-20 px-2"
+                      placeholder="l"
+                    />
+                    <span class="ml-2">cm</span>
+                  </p>
+                  <div class="card-actions">
+                    <button class="btn btn-primary">Calculate</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card w-96 bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="./images/parallelogram.png"
+                    alt=""
+                    class="rounded-xl"
+                  />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Parallelogram</h2>
+                  <p>Area (A) = b x h</p>
+                  <div class="card-actions">
+                    <button class="btn btn-primary">Calculate</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- area calculation -->
+          <div class="w-[400px]">Area Calculation</div>
+        </div>
+      </section>
+    </main>
+    <script src="area-calculator.js"></script>
   </body>
 </html>

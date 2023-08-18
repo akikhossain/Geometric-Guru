@@ -10,3 +10,12 @@ function calculateTriangleArea() {
 }
 
 // Rectangle area calculation
+
+function calculateRectangleArea() {
+  const width = getElementField("rectangle-width");
+  const length = getElementField("rectangle-length");
+  const area = width * length;
+  setElementField("rectangle-area", area);
+}
+
+// Parallelogram area calculation

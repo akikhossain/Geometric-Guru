@@ -27,3 +27,21 @@ function calculateParallelogramArea() {
   const area = paraBase * paraHeight;
   setElementField("parallelogram-area", area);
 }
+
+// Rhombus area calculation
+
+function calculateRhombusArea() {
+  const diaMeterOne = getElementField("rhombus-diameter1");
+  const diameterTwo = getElementField("rhombus-diameter2");
+  const area = 0.5 * diaMeterOne * diameterTwo;
+  setElementField("rhombus-area", area);
+}
+
+// pentagon area calculation
+
+function calculatePentagonArea() {
+  const periMeter = getElementField("pentagon-perimeter");
+  const pentagonBase = getElementField("pentagon-base");
+  const area = 0.5 * periMeter * pentagonBase;
+  setElementField("pentagon-area", area);
+}

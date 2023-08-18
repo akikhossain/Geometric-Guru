@@ -1,14 +1,12 @@
-function calculateTriangleArea() {
-  const baseField = document.getElementById("triangle-base");
-  const baseValueText = baseField.value;
-  const base = parseFloat(baseValueText);
+//  Triangle area calculation
 
-  const heightField = document.getElementById("triangle-height");
-  const heightValueText = heightField.value;
-  const height = parseFloat(heightValueText);
+function calculateTriangleArea() {
+  const base = getElementField("triangle-base");
+
+  const height = getElementField("triangle-height");
 
   const area = 0.5 * base * height;
-
-  const areaSpan = document.getElementById("triangle-area");
-  areaSpan.innerText = area;
+  setElementField("triangle-area", area);
 }
+
+// Rectangle area calculation

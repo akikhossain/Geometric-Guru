@@ -45,3 +45,12 @@ function calculatePentagonArea() {
   const area = 0.5 * periMeter * pentagonBase;
   setElementField("pentagon-area", area);
 }
+
+// Ellipse area calculation
+
+function calculateEllipseArea() {
+  const axisA = getElementField("ellipse-axis");
+  const axisB = getElementField("ellipse-baxis");
+  area = 3.14 * axisA * axisB;
+  setElementField("ellipse-area", area);
+}
